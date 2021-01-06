@@ -1,0 +1,75 @@
+
+
+{% extends "layout.html" %}
+{% block body %}
+    
+       
+<!---HARİTA TASARIM KODU---------------->
+<div class="container">
+  <br>
+  <h2 style="text-align: center;color:#00AFC9">Bize Ulaşın</h2>
+  <br><br>
+  <div class="row">
+    <div class="col-md-8 col-sm-12"><br>
+      <iframe src="https://www.google.com/maps/d/embed?mid=11jtVSxaT-B6l3C_hmHs8A2YpdTLQorLt" width="580" height="600"></iframe>
+    </div>
+
+    <div class="col-md-4 col-sm-12">
+      <br><br><br><br>
+      <br>
+      <p><img class="d" src="{{ url_for('static', filename = 'image/adres.png') }}"><b>            Özel Yaşam Hastanesi<br></b>Necip Fazıl Kısakürek Mahallesi, Yıkık Köprü Caddesi 34896 Pendik/İstanbul</p>
+      <br><br>
+      <p><img class="d" src="{{ url_for('static', filename = 'image/tel.png') }}"><b>            Telefon:</b>            0216 368 75 24 <br>0216 368 75 25</p><br>
+    </div>
+  </div>
+    
+</div>
+<!------HARİTA TASARIM KODU SONU-------------------->
+<br><br><br><br><br><br><br>
+<!--FOOTER TASARIM KODU---------------------->
+<footer class="page-footer" >
+  <div class="container" >
+      <div class="row">
+
+         <div id="footer-yazi" class="col-md-4 col-sm-12">
+            <br> 
+            <h5 style="text-decoration:underline;"><strong>HASTANEMİZ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/birimlerimiz">TIBBİ BİRİMLER</a></p>
+            <p><a style="color:white;" href="/doktorlarimiz">DOKTORLARIMIZ</a></p>
+            <p><a style="color:white;" href="/randevual">E-RANDEVU</a></p>
+      </div>	
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12">
+          <br>
+            <h5 style="text-decoration:underline;"><strong>HASTA REHBERİ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/hastahaklari">HASTA HAKLARI</a></p>
+            <p><a style="color:white;" href="/hastasorumluluklari">HASTA SORUMLULUKLARI</a></p>
+            <p><a style="color:white;" href="/refakatcikurallari">REFAKATÇİ KURALLARI</a></p>
+            <p><a style="color:white;" href="/ziyaretcikurallari">ZİYARETÇİ KURALLARI</a></p>
+
+      </div>
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12" >
+          <br>
+            <h5 style="text-decoration:underline;"><strong>BİZE ULAŞIN</strong></h5>
+            <hr>
+            <p><img src="{{ url_for('static', filename = 'image/location.png') }}" />Adres: Dumlupınar Mahallesi, Gözdağı Cd. Pendik/İstanbul</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 24</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 25</p>
+      </div>
+  </div>
+
+
+</footer>
+
+<!-- Jumbotron -->
+<div class="jumbotron" style="margin-bottom: 0; height: 10px;">
+<h5 style="color: #00AFC9;"><center>Tüm Hakları Saklıdır &copy2020 </center></h5>
+</div>
+<!-- Jumbotron Son -->
+</body>    
+{% endblock %}

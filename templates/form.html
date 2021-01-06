@@ -1,0 +1,110 @@
+{% from "includes/formhelpers.html" import render_field %}
+{% from "includes/formhelpers.html" import render_field %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body style ="background-image:url(https://supplychainbeyond.com/wp-content/uploads/2020/03/coronavirus-and-understanding-its-impact-on-supply-chains.jpg )"   >
+<br>
+<h1  style="color:white; text-align:center;font-size:46" >COVİD-19 RİSK ÖLÇME FORMU</h1>
+<div class="container" style ="width: 800px; height: 1200px; background-color: white; opacity: 0.7; position:absolute;right:25%;left:28%;top:15%; margin-bottom:70px">
+<form class="container" method= "post">
+<div style="background-color: #63BEFF; opacity: 1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>	
+<p style="color:black; font-size:22px;">
+<strong>Lütfen Cinsiyet Bilginiz Seçiniz</p></center>
+{{ form.cinsiyet()}}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Lütfen Yaş Bilginizi Giriniz </p>
+{{ render_field(form.yas, class="form-control") }}
+</center>
+</div>
+
+<div style="background-color: #63BEFF; opacity: 1; border-style:solid; border-color:#63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Hamile Misiniz ?</p></center>
+{{ render_field(form.hamilelik, class="form-control") }}
+</div>
+
+<div style="background-color: #63BEFF; opacity: ; border-style:solid; border-color:#63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px;padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Diyabet Hastalığınız Var Mı ?</p></center>
+{{ render_field(form.diyabet, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Astım Hastalığınız Var Mı ?</p></center>
+{{ render_field(form.astim, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Tansiyon Hastalığınız Var Mı ?:</p></center>
+{{ render_field(form.tansiyon, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Kardiyolojik Rahatsızlığınız Var Mı ?</p></center>
+{{ render_field(form.kardiyolojik_rahatsizlik, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Vücut Kitle İndeksinize Göre Obez Misiniz ?</p></center>
+{{ render_field(form.obezite, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Çocukken Geçirdiğiniz Bir Rahatsızlığınız Oldu Mu ?</p></center>
+{{ render_field(form.cocuk_rahatsizligi, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Yukarıdakiler Dışında Bir Rahatsızlığınız Var Mı ? </p></center>
+{{ render_field(form.kronik_rahatsizlik, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Sigara Kullanıyor Musunuz ?</p></center>
+{{ render_field(form.sigara, class="form-control") }}
+</div>
+
+<div style="background-color:  #63BEFF; opacity:1; border-style:solid; border-color: #63BEFF; margin-left:50px; margin-right:50px; margin-top:20px; margin-bottom:20px; padding-bottom:10px;">
+<center>
+<p style="color:black; font-size:22px;">Pozitif Bir Vakayla Temasınız Oldu Mu ?</p></center>	
+{{ render_field(form.temas, class="form-control") }}
+</div>
+
+<center><button style="width: 88%; height: 50px; background: #F76420; color:#fff5f5; font-size:22px;" type="submit" >Covid-19 Risk Ölçümü</button>
+</form>
+<br><br>
+
+</div>
+<br><br><br>
+</body>
+</html>

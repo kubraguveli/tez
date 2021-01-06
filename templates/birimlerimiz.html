@@ -1,0 +1,209 @@
+
+
+{% extends "layout.html" %}
+{% block body %}
+<!---------------------------------------------->
+<br>
+<h2 style="text-align: center;color:#00AFC9">Tıbbi Birimlerimiz</h2>
+<br>
+<div style=" text-align:center; border: 2px; border-color: red;">
+  <img  src="{{ url_for('static', filename = 'image/saglik-1.jpg') }}">
+</div>
+
+<br>
+<div class="container">
+  <div class="row mt-12">
+    <div class="col-md-12">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+<a class="card-link" data-toggle="collapse" style="color:#00AFC9" href="#c1"><strong>Temel Tıp Birimleri</strong></a>
+          </div>
+          <div id="c1" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <li><strong>Radyoloji</strong>
+              <p>Radyoloji, x ışınları ve diğer görüntüleme yöntemlerinin tıpta tanı ve tedavi amacıyla kullanılmasıdır.
+              Tanı ve tedavi amacıyla kullanılan yöntemlerden bazıları; ultrason, bilgisayarlı tomografi (CT), manyetik
+              rezonans görüntüleme(MR), nükleer tıp yöntemleri, pozitron emisyon tomografi (PET), mamografi, floroskopi
+              ve X ışını kullanan diğer bazı yöntemler olarak sıralanabilir. Bu yöntemlerin tanı amacıyla kullanımı, 
+              tıbbi görüntüleme ile elde edilen görüntülerden hastalıkların tespitinde yararlanılması şeklinde olurken, 
+              tedavi amacıyla kullanımı ise bazı cerrahi işlemlerin görüntüleme yöntemleri sayesinde daha az zararla yapılmasını 
+              sağlamalarıdır.</p>
+              </li>
+              <li><strong>Patoloji</strong>
+              <p>Patoloji (Tıbbi Patoloji), hastalık (Yunanca pathos) çalışması ve bilimi (Yunanca logos) kelimelerinin birleşmesi ile oluşmuş hastalıklar
+              bilimi anlamına gelen bir sözcüktür. Ayrıca belirli bir bozukluğun tipik özellikleriyle birlikte bütününe patoloji denilebilir.
+              Patoloji (hastalıkbilim) özellikle altta yatan hastalıkla ilgili hücrelerdeki, dokulardaki ve organlardaki yapısal ve işlevsel değişikliklerin tanınması,
+              araştırılması ve incelenmesiyle ilgilenir.Patoloji alanında uzman olan kişilere patolog veya patoloji uzmanı denmektedir.Amerika'da patoloji anatomik patoloji ve klinik patoloji olarak ayrılmaktadır.
+             </p>
+              </li>
+              <li><strong>Mikrobiyoloji</strong>
+              <p>Mikrobiyoloji, mikropları ve "mikro" boyutundaki organizmaları inceleyen bilim dalına verilen isimdir. Mikrobiyoloji bakteriler, virüsler, algler vb. canlıların incelenmesini içerir.
+              Mikroorganizma denilince bakteriler, virüsler, protozoonlar, mantarlar ve ilkel algler anlaşılır. Mikrobiyoloji bilim dalının faydalı olduğu branşlar, tıp, tarım ve endüstridir.</p>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+<a class="card-link" data-toggle="collapse" style="color:#00AFC9" href="#c2"><strong>Dahili Tıp Birimleri</strong></a>
+          </div>
+          <div id="c2" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <li><strong>Psikiyatri</strong>
+              <p>Psikiyatri, insanların duygu, düşünce ve davranışlarındaki sapmaları tanımlayıp çok farklı tekniklerle tedavi ederek insanlara yardım eden bir tıp disiplinidir. 
+              Psikiyatristler, öncelikle doktordur. Ruhsal bozuklukların tanısı, tedavisi ve engellenmesi üzerinde çalışır. Bunlar zihinsel, davranışsal, algısal ve sosyal bozuklukları içerir.
+              "Psikiyatri" terimi ilk defa 1808 yılında alman psikiyatrist Johann Christian Reil tarafından kullanılmıştır. Kelime anlamı ise tıbbi ruhsal tedavidir. Psikiyatri alanı ile ilgilenen
+              hekimlere psikiyatrist (psikiyatri uzmanı) denir.</p>
+              </li>
+              <li><strong>Nöroloji</strong>
+              <p>Nöroloji genel olarak beyin, beyin sapı, omurilik ve çevresel sinir sistemiyle kasların hastalıklarını inceleyen, teşhis ve cerrahi dışındaki tedavi uygulamalarını içeren tıp bilimi dalıdır.
+              Nöroloji zamanla içine kapalı ve sınırlı bir dal olmaktan çıkmış, epilepsi, hareket bozuklukları, beyin damar hastalıkları, bunamalar, uyku bozuklukları gibi ayrıca özelleşmişlik gerektiren alt
+              disiplinlere bölünmüştür, bunun yanı sıra 19. yüzyılda ruh hastalıklarıyla birlikte ele alınırken, 20. yüzyıldan itibaren psikiyatri ayrı bir dal olarak ayrılmıştır. Tüm bu alanlardaki ciddi 
+              laboratuvar arka planının yanı sıra günümüze nöroloji pek çok başka tıp alanı ile multidisipliner bir ilişki içindedir.</p>
+              </li>
+              <li><strong>Nefroloji</strong>
+              <p>Böbreklerin sağlığı ve hastalıklarıyla ilgilenen iç hastalıklarına bağlı bir bilim dalıdır, dahili tıp bilimlerinden birinin uygulama alanıdır.
+              Böbrek hastalıkları hekimliği/uzmanlığı olarak da adlandırılabilir.</p></li>
+              <li><strong>İç Hastalıkları</strong>
+              <p>Genel dahiliye bölümü erişkin yaştaki hasta grubunun ilk başvuracağı bölümdür. Ateşli hastalıklar, solunum yolu, sindirim sistemi hastalıkları, karaciğer hastalıkları, şeker hastalığı, yüksek tansiyon, kalp hastalıkları,
+              trioid hastalıkları genel dahiliye birimine  başvurarak ilk teşhis ve tedavi programına alınırlar.
+              Hastalık teşhisinde radyoloji, biyokimya uzmanlarımızla ve cerrahi girişim gerektiren durumlarda Genel Cerrahi ve diğer cerrahi branşlarla koordineli olarak çalışılmaktadır.
+              Halk arasında iç hastalıkları olarak isimlendirilen dahiliye, geniş kapsamlı bir bilim dalı olması nedeniyle sağlık sorunu yaşayanlar için bir klavuz görevi üstlenmektedir. Tetkikler çoğunlukla bu klinik tarafından başlatılarak 
+              teşhis konulur, hastalığın durumuna bağlı olarak yine ya bu birim tarafından tedavi edilir ya da hasta bir üst branşa sevk edilir.
+              </p></li>
+              <li><strong>Göğüs Hastalıkları</strong>
+              <p>Tıpta ayrı bir uzmanlık dalı olan Göğüs Hastalıkları temelde akciğer ve hava yolları olmak üzere solunum sistemini etkileyen hastalıklarla ilgilenir. Yetişkinlerde göğüs hastalıkları varlığında en sık görülen şikâyetler nefes
+               darlığı, öksürük, balgam ve göğüs ağrısıdır.
+              </p></li>
+              <li><strong>Fiziksel Tıp ve Rehabilitasyon</strong>
+              <p>Fiziksel tıp ve rehabilitasyon (eskiden fizik tedavi ve rehabilitasyon; kısaltılmış olarak FTR), temelde kas-iskelet sistemi hastalıklarının tanısı, konservatif (cerrahi dışı) tedavisi ve rehabilitasyonunu konu edinen bir tıbbi
+              uzmanlık dalıdır. Bununla birlikte, yalnız kas-iskelet sistemi değil, diğer sistemlere ait doğumsal ya da edinilmiş hastalıklara bağlı fizyolojik ya da anatomik yetersizlikler de bu dalın alanına girer. Dolayısıyla FTR, her yaştan
+              hastada; ağrı, işlev kaybı, yaşam kalitesinde bozulma ve bağımlılık nedeni olan nörolojik, ortopedik, romatizmal ve kardiyopulmoner hastalıkların birincil ya da destekleyici tedavisi ile uğraşır.
+              </p></li>
+              <li><strong>Enfeksiyon Hastalıkları</strong>
+              <p>Enfeksiyon hastalıkları, bulaşıcı hastalıklar ve intaniye olarak da bilinir, bulaşıcı hastalıkların tanısı, tedavisi ve kontrol altına alınması alanında uzmanlaşmış bir tıp dalı. Bir enfeksiyon hastalıkları uzmanı büyük ölçüde
+               hastane kaynaklı enfeksiyonlarla ya da hastane dışında gelişen salgınlarla mücadele eder.
+              </p></li>
+              <li><strong>Beslenme ve Diyet</strong>
+              <p>Diyetisyenlik büyüme, gelişme ve yaşam boyu tüm bireylerin sağlığının korunması, geliştirilmesi, yaşam kalitesinin artırılması için beslenme biliminin ilkeleri doğrultusunda bireysel ve toplu beslenmenin plan ve programlarını düzenleyen; 
+              besin ögesi, besin ve beslenmeden kaynaklanan sağlık sorunlarını araştıran, değerlendiren, çözüm yolları bulan; var olan besin kaynaklarının ekonomi ve sağlık kurallarına uygun olarak kullanılmasını sağlayan, besin denetimini yapan, bu konularda
+               fizyolojik, psikolojik ve sosyolojik olarak sağlıklı yaşam biçimlerinin benimsenmesi amacıyla bireyi ve toplumu bilgilendiren, bilinçlendiren, doğuştan ve sonradan oluşan hastalıklar ve diğer özel durumlarda tıbbî ve cerrahî tedavilere uygun, 
+               doğal ve tedavi edici besinlerin bileşimlerine göre diyet programı plânlayan, eğitim veren, eğitim programlarını plânlayan uygulatan ve izleyen sağlık meslek alanıdır.
+              </p></li>
+              <li><strong>Pediatri</strong>
+              <p>Pediatri, bebek, çocuk ve ergenlerin (yeni doğmuşlardan yaklaşık 18-19 yaşındakilere kadar) tıbbi bakımıyla ilgilenen tıp dalıdır. Pediatri genel olarak çocuk hastalıkları ile ilgilenir.
+              </p></li>
+              <li><strong>Çocuk Psikiyatrisi</strong>
+              <p>Çocuk ve Ergen psikiyatrisinin amacı çocuk ve gençteki normal ruhsal gelişimi takip etmek ve hayata sağlıklı bir şekilde hazırlamak, ayrıca ruhsal hastalıklar gelişirse de bunları tedavi ederek erişkin hayatını etkilemesini önlemektir.
+               Çocuk ve genç psikiyatrisi ağırlıklı olarak hastalıkları ortaya çıkmadan önlemeyi amaçlar.</p></li>
+              <li><strong>Dermatoloji</strong>
+              <p>Dermatoloji, cilt hastalıkları ve tedavisiyle ilgilenen tıp dalı. Deri bilimi olarak da adlandırılmaktadır. Saç dökülmesi hangi nedene bağlı olursa olsun eğer bir kişi böyle bir durumdan yakınıyor ise hiç paniğe kapılmadan bir Deri Hastalıkları
+              (Dermatoloji=Cildiye) uzmanına başvurmalıdır. Dermatolog adı verilen uzmanlar teşhisi rahatlıkla koyar ve hastaya uygun bir çözüm yolu önerirler. Bazen çözümün çok basit olabileceği unutulmamalıdır.
+              Deri Hastalıkları olarak da bilinen dermatolojik rahatsızlıklardan en yaygın olanları Dermatofaji, Sedef Hastalığı, Akne, Hulusi Behçet'in keşfettiği Behçet hastalığı, alerji, ve sık görülen bir cinsel rahatsızlık olan HPV olarak sıralanabilir.
+               Bunlara ek olarak birçok dermatolojik rahatsızlık gündelik yaşantımızda karşımıza çıkabilir. Bunun için öncelikle bu hastalıklar konusunda az da olsa bilgi sahibi olmalı ve herhangi bir hastalığın belirtilerinden şüphelenildiğinde hemen bir uzmana 
+               danışılmalıdır. Unutulmamalıdır ki bir hastalığın tedavisinde en faydalı etkenlerden birisi erken teşhistir.Cilt problemleri olan hastalar Dermotologlar tarafından uygun ilaçlar reçete edilerek hastalığın tedavisi sağlanır.</p></li>
+              <li><strong>Aile Hekimliği</strong>
+              <p>Aile hekimleri, iç hastalıkları, kadın hastalıkları - doğum, çocuk sağlığı ve hastalıkları, genel cerrahi, psikiyatri, kardiyoloji branşlarında belirli sürelerde rotasyon yaparak temel hastalıkların önlenmesi ve tedavisindeki bilgileri edinirken aile 
+              hekimliğine özgün yaklaşımları da öğrenerek ve içselleştirerek mezuniyet sonrası eğitimlerini tamamlarlar ve uzman hekimler olarak sağlık bakım ekipleri içinde yerlerini alırlar.
+              Aile hekimliği, hastalarında yaş, cinsiyet, organ ya da sistem ayrımı yapmaz, eğitimi dahilindeki tüm hastalara hizmet verir.</p></li>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+<a class="card-link" data-toggle="collapse" style="color:#00AFC9" href="#c3"><strong>Cerrahi Tıp Birimleri</strong></a>
+          </div>
+          <div id="c3" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <ul>
+                <li><strong>Beyin ve Sinir Cerrahisi</strong>
+                <p>Beyin ve sinir cerrahisi, nörocerrahi ya da nöroşirürji merkezi ve periferik sinir sistemi bozukluklarının mekanik müdahale yoluyla tedavisini yapan bir cerrahi uzmanlık dalıdır. 
+                Bu dalda uzmanlık alan tıp doktorlarına nörocerrah ya da nöroşirürjiyen denmektedir. 
+                Bu uzmanlık eğitiminin sonrasında daha üst ihtisas dalları olarak spinal, fonksiyonel, tümör, vasküler, pediatrik nöroşirürji gibi dalları da vardır.
+                Gerek branşın eğitiminin ve gerekse pratik uygulamalarının zorluğu nedeni ile nörocerrahların sayısı çok fazla değildir. Tıbbın en çok dikkat ve tecrübe gerektiren dallarından biridir.
+                Birçok ameliyatı yaklaşık 5-14 saat sürer. Bu nedenlerle çoğu ülkede bu dalın uzmanları en çok ücret alan hekimlerdir.</p></li>
+                <li><strong>Genel Cerrahi</strong>
+                <p>Genel cerrahi, vücutta sistemik ve yerel sorunların cerrahi yöntemlerle tedavisi yanında, genel prensipler (yara iyileşmesi, yaralanmaya metabolik ve endokrin cevap gibi) konuları
+                 içeren ve gelişimleri açısından pek çok cerrahi ve temel tıp dalları etkilemiş bir teknik disiplindir. Genel olarak yemek borusu, mide, ince bağırsak, kalın bağırsak, karaciğer, pankreas, 
+                 safra kesesi ve safra yolları dahil olmak üzere karın içeriğine odaklanan bir cerrahi uzmanlık branşıdır. Bunun yanında tiroid, periferik damarlar, meme, yaralanma, yumuşak doku, deri ve 
+                 fıtıklar üzerine de çalışılır.</p></li>
+                <li><strong>Göz Hastalıkları</strong>
+                <p>Görme yeteneğini kısıtlayan ve gözde meydana gelen rahatsızlıklara göz hastalıkları denmektedir. Göz hastalıkları genetik olabileceği gibi bazı çevresel faktörlere bağlı olarak da ortaya çıkabilmektedir.
+                Gözün herhangi bir bölümünde oluşmuş olan bütün sorunlar göz hastalıkları olarak adlandırılabilir. Genetik olan göz Göz hastalıkları nedir ve neden oluşur hastalıkları aileden gelen genler yüzünden ortaya çıkar. 
+                Çevresel faktörlerden kaynaklanan göz hastalıkları ise bazı dış etkenler dolayısıyla oluşur. Görme yetisinde güçlük meydana getiren nedenlerden biri, göze herhangi bir maddenin kaçması ya da girmesi sonucu oluşan hasardır.
+                Uzun süre boyunca görme güçlüğü yaşanan yerlerde bulunmak da göz hastalıklarına neden olabilir. Işık ayarı dengesiz olan ortamlar, bu yerlerden biridir. Göz hastalıkları nedir ve neden oluşur Bazı hastalıkların sonucunda da 
+                göz kusurları meydana gelebilir. Bu ve benzeri sebepler gözde sorunlar ortaya çıkmasına sebep olur. Göz sorunları birtakım rokettube yöntemler ile tedavi edilmektedir.</p></li>
+                <li><strong>Üroloji</strong>
+                <p>Üroloji, kadın ve erkeklerin üriner sistemleri ile erkeklerin üreme sistemlerini inceleyen tıbbi branştır. Tıbbın bu branş dalı hem idrar yollarını ilgilendiren enfeksiyonların tedavisi gibi üriner sistemin cerrahi problemleri 
+                dışında kalan rahatsızlıkların tedavisini, hem de idrar yollarını ilgilendiren cerrahi işlemleri bünyesi altında toplar. İdrar yollarını ve üreme sistemini ilgilendiren rahatsızlıkların hepsine birden ürogenital bozukluklar denir.</p></li>
+                <li><strong>Kulak Burun Boğaz Hastalıkları</strong>
+                <p>Kulak burun boğaz (KBB) olarak da adlandırılan Otorinolarengoloji veya Otolarengoloji, kulak, burun, boğaz ve baş ve boyundaki alakadar diğer yapılar ile ilgilenen cerrahi bir tıp branşıdır. Bu alanda uzmanlaşmış doktorlara otorinolarengolojist, 
+                kulak burun boğaz uzmanları,, KBB doktorları, KBB cerrahları veya baş boyun cerrahları denir. Uzmanlar kulak, burun, boğaz ve kafatasının tabanında görülen hastalıklar ile kafa ve boyundaki kanser ve iyi huylu tümörlerin cerrahi tedavisini gerçekleştirir.</p></li>
+                <li><strong>Ortopedi ve Travmatoloji</strong>
+                <p>Ortopedi, kas iskelet sistemini ve onun sorunlarını inceleyen, gövdenin devinim dizgesinin morfolojisini ve işlevini değiştiren doğumsal, sonradan edinilmiş ya da travma sonucu oluşan lezyonları incelemeye, önlemeye ve tedavi etmeye yönelik tıp uzmanlık dalıdır. 
+                Sözcük, orthos (düzgün) ve paedia (çocuk) kelimelerinin birleşmesiyle oluşmuştur.</p>
+                <p>Travmatoloji, bugün en geniş anlamıyla tıp dilinde kullanılmakta, ve ortopedi bilim dalıyla birlikte anılarak Ortopedi ve Travmatoloji anabilim dalı şekliyle yerleşmiştir.
+                Travmatoloji daha çok, travma sonucu oluşan durumlarda acil tedavi içeren daldır.</p>
+                </li>
+                <li><strong>Plastik ve Rekonstrüktif Cerrahisi</strong>
+                <p>Plastik cerrahi veya tam adıyla plastik, rekonstrüktif ve estetik cerrahi, vücut üzerindeki çeşitli yapıların yeniden yapılması, şekillendirilmesi, ciddi doku kayıplarının giderilmesini ve her türlü estetik girişimi kapsayan cerrahi bir disiplindir.
+                Kozmetik, estetik cerrahi plastik cerrahinin en bilinen kısımlarıdır. Bilinenin aksine plastik cerrahi alanının büyük kısmını  estetik cerrahi dışında rekonstüktif cerrahi, kraniyofasiyal cerrahi, el cerrahisi, mikrocerrahi ve yanık tedavisi oluşturmaktadır. 
+                Rekonstrüktif ve estetik cerrahi olmak üzere iki ana kategoriye ayrılmıştır</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------->
+<br><br><br><br><br><br>
+<!--FOOTER TASARIM KODU---------------------->
+<footer class="page-footer" >
+  <div class="container" >
+      <div class="row">
+
+         <div id="footer-yazi" class="col-md-4 col-sm-12">
+            <br> 
+            <h5 style="text-decoration:underline;"><strong>HASTANEMİZ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/birimlerimiz">TIBBİ BİRİMLER</a></p>
+            <p><a style="color:white;" href="/doktorlarimiz">DOKTORLARIMIZ</a></p>
+            <p><a style="color:white;" href="/randevual">E-RANDEVU</a></p>
+      </div>	
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12">
+          <br>
+            <h5 style="text-decoration:underline;"><strong>HASTA REHBERİ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/hastahaklari">HASTA HAKLARI</a></p>
+            <p><a style="color:white;" href="/hastasorumluluklari">HASTA SORUMLULUKLARI</a></p>
+            <p><a style="color:white;" href="/refakatcikurallari">REFAKATÇİ KURALLARI</a></p>
+            <p><a style="color:white;" href="/ziyaretcikurallari">ZİYARETÇİ KURALLARI</a></p>
+
+      </div>
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12" >
+          <br>
+            <h5 style="text-decoration:underline;"><strong>BİZE ULAŞIN</strong></h5>
+            <hr>
+            <p><img src="{{ url_for('static', filename = 'image/location.png') }}" />Adres: Dumlupınar Mahallesi, Gözdağı Cd. Pendik/İstanbul</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 24</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 25</p>
+      </div>
+  </div>
+
+
+</footer>
+
+<!-- Jumbotron -->
+<div class="jumbotron" style="margin-bottom: 0; height: 10px;">
+<h5 style="color: #00AFC9;"><center>Tüm Hakları Saklıdır &copy2020 </center></h5>
+</div>
+<!-- Jumbotron Son -->
+</body>
+{% endblock body %}

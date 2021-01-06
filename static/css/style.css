@@ -1,0 +1,38 @@
+.page-footer{
+	background: #00AFC9;
+	margin-bottom:0px;
+}
+
+#footer-yazi{
+	color:white;
+	text-align: center;
+	font-size:16px;
+}
+
+#slider{
+	background: #2CD179;
+	}
+
+#slider-font{
+	color:00AFC9;
+	font-style: bold;
+
+}
+
+#dc-link{
+	text-align:right;
+	color:#00AFC9;
+	background-color: white;
+	border-color:white;
+}
+
+#dc-p{
+	font-style: bold;
+	font-family: arial;
+	font-size: 16px;
+
+}
+
+
+
+

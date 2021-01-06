@@ -1,0 +1,464 @@
+
+
+{% extends "layout.html" %}
+{% block body %}
+    
+
+<!--SLIDER KODU-->
+    <div id="demo" class="carousel slide-lg" data-ride="carousel">
+      <!-- Indicators -->
+      
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+
+      <!-- Slide Show -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename = 'image/slider-1.png') }}">
+          <div class="carousel-caption">
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename = 'image/slider-2.png') }}" >
+          <div class="carousel-caption">
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename = 'image/slider-3.jpg') }}">
+          <div class="carousel-caption">
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename = 'image/slider-4.png') }}" >
+          <div class="carousel-caption">
+          </div>
+      
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+      <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+    </div>
+  <br>
+<!-----SLIDER KODU SONU--->
+
+<!--ÖNERİLER-->
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-sm-12" style="background-color: #000022; color: white;">
+				 <h4 style="margin-top: 25px; font-family: sans-serif; font-weight: bold; ">Sağlık Bilgileri</h4>
+			</div>
+      <div class="col-md-3 col-sm-12" style="background-color: #00AFC9; color: white;">
+				 <h4 style="margin: 10px; font-family: sans-serif; font-weight: bold;">Covid-19 Risk Ölçüm Formu</h4>
+			</div>
+		</div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/hap.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Asprinin Zararı</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal1">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Doktor Tavsiyesi Olmadan Kullanılan Asprin Kanama Riskini Arttırıyor</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                <br>
+                <p>Bilim insanlarının yaptığı geniş  çaplı bir araştırmaya göre; aspirin tehlikeli kanama riskini artırdığı için doktor tavsiyesi  olmadan kalp hastalığının
+                  önlenmesi  için asla kullanılmamalı.Uzmanlar hastalıkları önlemek için kontrolsüz kullanılan aspirinin kişiye fayda yerine zarar vereceği konusunda hemfikir.
+                </p>
+                <p>İç Hastalıkları Uzmanı İngilitere'de  yaşları 50 ile 74 arasında olan kişilerin kayıtları gözden geçirilerek bir değerlendirme yapıldığını  belirterek, bu değerlendirmenin sonucunda günlük aspirin kullanan kişilerde gastrointestinal sistem kanama riskinin yüzde 40'dan daha fazla artmış olduğu gözlemlendi.
+                 Buna göre de aspirin kullanımının yararlarının ve zararlarının kamuoyunda tartışılması gündeme geldi.
+                 King's College Tıp Okulu'nda da bu çalışmadan önce bir araştırma yapıldı. Tamamen sağlıklı kişilerin baz alındığı çalışmada, inme (felç) ve kardiyovasküler gibi hastalıklardan aspirin ile korunmanın, kanama riski ile karşılaştırıldığında buna değmeyeceği açıklandı. 
+                 Bunların ışığında İngiltere'de primer koruma denilen yani kardiyovasküler ve inme açısından riskli olan bireylerin korunmasında aspirin önerilmiyor. Ancak kalp krizi geçirmiş, 
+                stent takılmış, felç olmuş kişilerin aspirin ile korunması sekonder korunmadır. Aspirin sekonder korunma için kullanılmalıdır.'' dedi.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+   <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/covid.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Koronavirüs  Belirtileri</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal2">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal2">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Koronavirüs  Belirtileri</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                <br>
+                <p>Koronavirüs, genellikle 2-14 günlük kuluçka süresinden sonra 39°C’ye varan yüksek ateş, öksürük ve nefes darlığı/solunum sıkıntısı ile ortaya çıkıyor.
+                  Boğaz ağrısı, baş ağrısı, burun akıntısı, ishal, yorgunluk, halsizlik, kas-eklem ağrısı, konjunktivit, tat alma veya koku duyusunun kaybı, ciltte döküntü ya da el ayak parmaklarında renk değişimi gibi bulgular da görülebiliyor.
+                  Ciddi semptomlar, solunum güçlüğü veya nefes darlığı, göğüs ağrısı veya göğüste baskı, konuşma veya hareket kaybı olarak öne çıkıyor.
+                  Sağlıklı kişilerde hastalık hafif seyredebiliyor. Yaşlı (>65 yaş) ve altta yatan hastalığı olanlarda (akciğer hastalıkları, diyabet, organ yetmezlikleri) ve bağışıklığı baskılanmış kişilerde durum daha ağır seyrederek, yaşam kaybına yol açabiliyor. 
+                  </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/uykusuzluk.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Uykusuzluk İçin Çözüm Önerileri</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal3">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal3">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Uykusuzluk İçin Çözüm Önerileri</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                <br>
+               
+                <p><strong>Biberiye:</strong>
+                Başta rosmarinik asit olmak üzere birçok fitokimyasallar içerir.
+                Uyku verici etkisini GABAA reseptörlerini uyararak verir. GABA transaminaz enzimini inhibe eder ve pentobarbital benzeri uyku verir.</p>
+                <p><strong>Ginseng:</strong>
+               Tıpkı biberiye gibi GABAA reseptörlerini uyararak uyku verir. Özellikle Kore Kımızı Ginsengi Non-REM uykusunu destekleyerek total uyku sürresini uzatır.
+                Non-REM uykusu vücudumuzun onarıldığı, yenilendiği, kas ve kemik yapımının arttığı ve bağışıklık sisteminin güçlendirildiği dönemdir. Ayrıca uyku-uyanıklık döngüsünü de düzenlediği düşünülmektedir.</p>
+                <p><strong>Menekşe Yağı:</strong>
+               İranlı bir grup araştırmacı randomize çift kör bir çalışmada yatmadan 30 dakika önce her bir burun deliğine birer damla menekşe yağı 
+               damlatılmasının hem uyku kalitesini artırdığı hem de uykusuzluğun azaldığını göstermişlerdir.</p>
+                <p><strong>Kava:</strong>
+                Pasifikte yetişen bir çeşit karabiberdir. İçerdiği kavalactone ve kavapyrone GABA benzeri aktivite göstermektedir.
+                 Bitkinin kökünde bolca bulunan bu maddeler karaciğeri bozabileceğinden dikkatli kullanılması gereklidir.</p>
+                <p><strong>Lavanta:</strong>
+                İçerdiği linalyl asetat ve linalool ile ister çay ister jel kapsül halinde kullanılsın GABA üzerinden uyku süresini uzattığı,
+                 uyku bölünmelerini engellediği ve daha etkin bir uyku sağladığı gösterilmiştir.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3 col-sm-12">
+						<div style="border:1px solid white;" >
+						<a href="/form"><img class="card-img" src="{{ url_for('static', filename = 'image/covidd.jpg') }}" /></a>
+						<center>
+						<h4 class="card-title">Covid-19 Risk Ölçüm Formu</h4></center>
+						<p style="text-align:left" class="card-text">Kronik hastalıklar,kontrol altında tutulmadığı zaman kişilerin yaşam standartlarının düşmesine,</p>
+					</div>
+					</div>
+  </div>
+
+<div class="row">
+  <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/evitamin.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>E Vitamini Faydaları</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal5">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal5">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">E Vitamini Faydaları</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                <br>
+                <p>E vitamini günlük yiyeceklerde yeterli miktarlarda bulunduğundan insanlarda yetersizlik belirtilerine sıklıkla rastlanmamaktadır. Çok önemli bir vitamin olan E vitamini yağda erir ve güneş ışınlarına duyarlıdır. 
+                Kızartma yöntemi, besinlerdeki E vitaminin bozulmasına neden olmaktadır. E vitamini, çoklu doymamış yağ asitlerinin oksidasyonla zarar görmesini engeller ve serbest radikalleri yok eder bu nedenle gıda ve kozmetik ürünlere de eklenir.
+                 Antioksidan etkisinden dolayı hücre zarının koruyucusudur. Yaşlanma karşıtı olarak bilinen e vitamini Alzheimer hastalığının etkisini azaltır, cilt yaralarının çabuk iyileşmesini, cildin parlak bir görünüm kazanmasını ve kırışıklıkların azalmasını sağlamaktadır.
+                 Kırmızı kan hücre oluşumuna yardımcı olan E vitamini fiziksel dayanıklılığı ve kas kuvvetini arttırır, bağışıklık sistemini güçlendirir, damar içerisinde akışkanlığı sağlar, damar tıkanıklığını yani aterosklerozu önlemektedir.
+                </p>
+                <p>Günlük ihtiyaç yetişkin erkeklerde 10 mg, kadınlarda 8 mg ve çocuklarda 3-10 mg arasında değişmektedir. Bununla birlikte E vitamini aşırı alındığında zararlı etkisi görülmemiştir. Doğal olarak bitkisel yağlar, yeşil yapraklı sebzeler, avokado, kuruyemişler gibi pek çok gıdada bulunur. 
+                Kuruyemişlerden fındıkta hatırı sayılır miktarda E vitamini bulunmaktadır. Ginseng, faydalı etkilerini antioksidan etkili E vitaminin katkısıyla gösteriyor olabilir.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/antiok.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Antioksidanın Faydaları</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal6">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal6">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Antioksidanın Faydaları</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <br>
+                <p>Antioksidanların hücrelerimizdeki serbest radikal olarak adlandırılan hasar yapıcı molekülleri “temizleyerek” hücre hasarını önlemeye yardımcı olan moleküllerdir.
+                 Moleküllerin baskılanmaması durumunda vücudumuza ciddi zarar verir.<br>Gıda türlerin arasında farklılık göstermek üzere piyasadaki birçok üründe az ya da çok bu özel ve koruyucu madde bulunuyor. 
+                 Bunların başında, lahana, pancar, fasulye, ıspanak, enginar, ahududu, çilek, yaban mersini, ceviz, bitter çikolata gelir. Özellikle domates, kırmızı lahana gibi kırmızı renkli ürünler aktioksidan açıdan çok zengindir.<br>
+                 Coenzim-Q10, Selenyum, C vitamini, E vitamini preparatları da yine antioksidanlara örnektir. Diyabet, kan yağı yüksek ve hipertansiyonu olanların damarlarında oksidasyona bağlı plaklar oluşuyor ve damar sertliği, dolayısıyla damarlarda tıkanıklık ortaya çıkıyor.
+                  Bu hastalıklara sahip kişilerin, yeni plakların oluşmaması, hatta olanların gerilemesi için antioksidan preparatları kullanması gerekebilmektedir.
+                 </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/üstsol.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Üst Solunum Yolu Enfeksiyonu</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal7">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal7">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Üst Solunum Yolu Enfeksiyonu</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                <br>
+                <p>Çocuklarda görülen okul hastalıkları konusunda başı çeken konu üst solunum yolu enfeksiyonlarıdır. Sağlıklı bir çocuğun yılda 6 ile 8 defa üst solunum yolu iltihabına yakalanması normal kabul edilmektedir.
+                 Özellikle kreş ve okula başlangıç dönemlerinde üst solunum yolu enfeksiyonları vakalarında artış yaşanır. Buna ek olarak, ilkbaharın ilk yarısı, sonbaharın ikinci yarısı gibi mevsim değişikliği dönemleriyle,
+                  kış aylarında üst solunum yolu hastalıklarının görülme sıklığı artmaktadır.
+                 Bu dönemler, mikroplar için daha elverişli bir ortam sağladığı gibi, çocukların da kapalı alanda daha fazla vakit geçirdiği ve bu nedenle solunum yoluyla bulaşan mikroplara davetiye çıkardığı bir dönemdir.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+     <div class="col-md-3 col-sm-12">
+     <p class="card-text">hatta dolaylı yoldan ölümlerine bile sebep olabilen uzun süreli hastalıklardır. Tek başına bile tehlikeli olabilen koronavirüs gibi hastalıklarla birleştiğinde ise tedavi süreci iyice zorlaşmaktadır. Bu sebeple tüm dünyada etkisini
+    iyice hissettiren koronavirüs salgınında en riskli gruplardan biri de kronik hastalıklara sahip kişilerdir. Bizde sitemizde sizlere sağlamış olduğumuz bu form ile bilgiler </p>
+     </div>
+    </div>
+    <div class="row">
+    <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/dezenfektan.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Dezenfektan Kullanımı</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal4">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal4">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">El Dezenfektanı Kullanma Rehberi</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                <h6><strong>El Dezenfektanları, Kolonyalar Kaç Derece Üstü Alkol İçerirse Virüse Karşı Etki Sağlar? Satılan bütün dezenfektanları kullanabilir miyiz? Dezenfektan satına alırken hangi kriterleri gözetmeliyiz?</strong> </h6>
+                <p>Alkol bazlı el dezenfektanları çok kısa sürede buharlaştığı için genellikle 2 ila 5 saniye içerisinde mikroorganizmaların çoğunu öldürür. Hastanelerde kullandığımız alkol bazlı dezenfektanlar içeriğindeki alkol 
+                oranı ayarlanmış ve son kullanma tarihleri yazılmış dezenfektanlardır. Evlerde kullanılan kolonya dediğimiz maddeler 70 derece ve üstü alkol içeren 70 ila 90 derece arasında dezenfektan özelliği olan kimyasallardır.
+                 Ağzı açık kalmış kolonyaların alkol içeriği hızla buharlaşacağı için mikrop öldürme özelliği azalabilir. O nedenle büyük volümdeki dezenfektan ve ev kolonyalarının ağzının sıkı kapatılması koşuluyla 60 ila 90 derece 
+                 arasında dezenfektan özelliği olan kimyasallardır.</p>
+                 <h6><strong>El Dezenfektanı Nasıl Uygulanırsa Etkili Olur? Yöntemi Nedir? </strong> </h6>
+                <p>Etkili olması için avucu doldurması ve elin avuç içi ve dışında parmak aralarında bilekleri içine alacak şekilde ovalanarak yayılması gerekir. Çok kısa sürede buharlaşabilme özelliği ve 2 saniye içerisinde de bakterileri ve virüsleri öldürme özelliği olduğu için hızla el üzerinde yayılması gerekir.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/sut.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Süt Tüketimi </h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal15">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal15">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Süt Tüketimi Romatoid Artrit Hastalığını Tetikliyor</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+              <p>Romatoid Artrit vücudun bağışıklık sistemi düzgün çalışmadığında ortaya çıkan kronik hastalıklardan biridir.Hastalığın belirtileri arasında şunlar vardır:<br>
+              -Yorgunluk, ateş ve kilo kaybı, <br>
+              -Genellikle sabahları ortaya çıkan ve hareketsizlikte daha kötü olan eklem sertliği,<br>
+              -Hassaslaşmış, şişmiş eklemler<br>
+              Romatoid artrit ilk etapta el ve ayak parmakları gibi küçük eklemleri etkileyerek başlar. Zamanla semptomlar bilek, dirsek, kalça, diz, omuz gibi diğer büyük eklemlere yayılır.</p>
+              <h6><strong>Romatoid Artrit’te Doğal Tedavi</strong></h6>
+              <p>Romatoid artrit tedavisinde kullanılan pek çok ilaç olmasına rağmen, çeşitli beslenme değişiklikleri ve egzersiz ile hastalığı ortadan kaldırmak çok daha sağlıklıdır. Romatoid Artrit ile ilgili araştırmalar hala istenilen düzeyde olmasa da, hastalığı tetiklediği kanıtlanmış bazı gıdalar var.
+              Romatoid Artrit’te beslenmeden ilk çıkarılması gereken besin süt olmalıdır. Beslenme uzmanı ve doktor Neal Barnard sütün içindeki kazein maddesinin eklem ağrılarını tetiklediğini ve süt tüketimini sonlandıran pek çok RA hastasında ağrıların ortadan kaybolduğunu belirtiyor.
+               Vücudun, sütteki antikorları yanlışlıkla zararlı bir madde olarak algıladığı için kendini korumaya aldığını; fakat bunu yaparken sütün yanı sıra vücudun diğer kısımlarına da saldırdığını belirtiyor. Bu durumun eklem ağrılarına yol açtığını bildiren DR. Neil Bernard, romatoid
+                artrit hastalarına ilk olarak beslenmelerinden sütü çıkarıp semptomların azalıp azalmadığını takip etmelerini öneriyor.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12">
+    <img class="img-thumbnail" src="{{ url_for('static', filename = 'image/suc.jpg') }}" style="width:100%; height: 200px;">
+    <h6 style="text-align: center"><br>Suçiçeği</h6>
+    <center><button class="btn btn-primary" id="dc-link" data-toggle="modal" data-target="#mymodal8">Öneriyi Gör</button>
+    </center>
+    <div class="modal fade" id="mymodal8">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">El Dezenfektanı Kullanma Rehberi</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                
+                <p>Suçiçeği sıklıkla çocukluk yaşlarında görülen, Varicella Zoster virüsünün (VZV) yol açtığı ve döküntülere neden olan bulaşıcı bir hastalıktır. Hava ve temas yoluyla çok kolay bulaşabildiği için koruyucu olarak aşılama büyük önem taşır.
+                 Aşı olmamış ve hastalığı geçirmemiş yetişkinler de risk altındadır.
+                  Suçiçeği mikrobu bağışıklık sistemini en çok baskılayan virüslerden biridir. Genelde hafif geçirilen bir hastalık olmakla beraber bağışıklık sistemi baskılanmış kişilerde ve yetişkinlerde şiddetli olabilir.
+                  Ensefalit (beyin dokusunda iltihap) ve zatürreye sebebiyet verebilir.
+                Suçiçeği aynı zamanda hamileler için de risk taşır. Zira doğacak bebekte doğumsal bozukluklara neden olabilir.
+                Suçiçeği bulaşından 2-3 hafta sonra ateş ve halsizlik gibi ön belirtiler başlar. Sonrasında kaşıntılı döküntüler oluşur. Hastalık bir süre sonra kendiliğinden geçer ya da doktor önerisiyle antiviral ilaçlarla kontrol altına alınır. Ancak deride iz kalmaması için yaraların kaşınmaması ve mikrop kapmaması gerekir.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12">
+     <p class="card-text"> koronavirüsün sizin için ne kadar riskli olduğunu sizden aldığımız bilgiler üzerinde tahmin etmeye çalıştık. Öncelikle şu bilinmeli ki koronavirüs herkes için risklidir.Bu form sadece kronik hastalıkların koronavirüse karşı insanlarda nasıl bir direnç düşüklüğüne yol açtığını 
+     ölçmektir.  Bu yüzden form sonucu ne olur olursa herkes gerekli önlemleri almalı, kurallara uymalı ve temkinli olmalıdır. </p>
+
+     <a href="/form"><button type="button" class="btn btn-justify active"  style="background-color: #000022; width: 88%; height: 50px; color:white; text-align:center;">FORMA GİT</button></a></center>
+     </div>
+
+  </div>
+ </div>
+ </div>
+ </div>
+</div>
+ </div>
+
+
+
+
+<!---ÖNERİLER--->
+
+
+<br><br><br><br>
+
+<!--FOOTER TASARIM KODU---------------------->
+<footer class="page-footer" >
+  <div class="container" >
+      <div class="row">
+
+         <div id="footer-yazi" class="col-md-4 col-sm-12">
+            <br> 
+            <h5 style="text-decoration:underline;"><strong>HASTANEMİZ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/birimlerimiz">TIBBİ BİRİMLER</a></p>
+            <p><a style="color:white;" href="/doktorlarimiz">DOKTORLARIMIZ</a></p>
+            <p><a style="color:white;" href="/randevual">E-RANDEVU</a></p>
+      </div>	
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12">
+          <br>
+            <h5 style="text-decoration:underline;"><strong>HASTA REHBERİ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/hastahaklari">HASTA HAKLARI</a></p>
+            <p><a style="color:white;" href="/hastasorumluluklari">HASTA SORUMLULUKLARI</a></p>
+            <p><a style="color:white;" href="/refakatcikurallari">REFAKATÇİ KURALLARI</a></p>
+            <p><a style="color:white;" href="/ziyaretcikurallari">ZİYARETÇİ KURALLARI</a></p>
+
+      </div>
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12" >
+          <br>
+            <h5 style="text-decoration:underline;"><strong>BİZE ULAŞIN</strong></h5>
+            <hr>
+            <p><img src="{{ url_for('static', filename = 'image/location.png') }}" />Adres: Dumlupınar Mahallesi, Gözdağı Cd. Pendik/İstanbul</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 24</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 25</p>
+      </div>
+  </div>
+
+
+</footer>
+
+<!-- Jumbotron -->
+  <div class="jumbotron" style="margin-bottom: 0; height: 10px;">
+    <h5 style="color: #00AFC9;"><center>Tüm Hakları Saklıdır &copy2020 </center></h5>
+  </div>
+  <!-- Jumbotron Son -->
+</body>            
+{% endblock %}

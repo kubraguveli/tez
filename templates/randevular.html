@@ -1,0 +1,87 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+
+{% if appointments %}
+<br><br>
+<h3 style="text-align: center; color:#00AFC9"><b>Önceki Randevularım</b></h3><br><br>
+<div class="container">
+<table class="table table-hover">
+    <thead>
+      <tr>
+      <th scope="col">Id</th>
+        <th scope="col">TC No</th>
+        <th scope="col">Tıbbi Birim</th>
+        <th scope="col">Tarih</th>
+        <th scope="col">Saat</th>
+        <th scope="col">Güncelleme</th>
+        <th scope="col">Silme</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for appointment in appointments %}
+      <tr>
+      <th scope="row">{{appointment.id}}</th>
+        <td><a href="/randevular/{{appointment.id}}">{{appointment.tcno}}</a></td>
+        <td>{{appointment.unit}}</td>
+        <td>{{appointment.date}}</td>
+        <td>{{appointment.time}}</td>
+        <td><a href="/randevuguncelle/{{appointment.id}}" class = "btn btn-warning">Güncelle</a></td>
+        <td><a href="/randevusilme/{{appointment.id}}" class = "btn btn-danger">Sil</a></td>
+      </tr>
+      {% endfor %}
+</tbody>
+  </table> 
+</div> 
+{% else %}
+<div class = "alert alert-danger">Henüz randevunuz bulunmuyor...</div>
+{% endif %}
+<br><br><br><br><br><br><br><br><br>
+<!--FOOTER TASARIM KODU---------------------->
+<footer class="page-footer" >
+  <div class="container" >
+      <div class="row">
+
+         <div id="footer-yazi" class="col-md-4 col-sm-12">
+            <br> 
+            <h5 style="text-decoration:underline;"><strong>HASTANEMİZ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/birimlerimiz">TIBBİ BİRİMLER</a></p>
+            <p><a style="color:white;" href="/doktorlarimiz">DOKTORLARIMIZ</a></p>
+            <p><a style="color:white;" href="/randevual">E-RANDEVU</a></p>
+      </div>	
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12">
+          <br>
+            <h5 style="text-decoration:underline;"><strong>HASTA REHBERİ</strong></h5>
+            <hr>
+            <p><a style="color:white;" href="/hastahaklari">HASTA HAKLARI</a></p>
+            <p><a style="color:white;" href="/hastasorumluluklari">HASTA SORUMLULUKLARI</a></p>
+            <p><a style="color:white;" href="/refakatcikurallari">REFAKATÇİ KURALLARI</a></p>
+            <p><a style="color:white;" href="/ziyaretcikurallari">ZİYARETÇİ KURALLARI</a></p>
+
+      </div>
+
+
+      <div id="footer-yazi" class="col-md-4 col-sm-12" >
+          <br>
+            <h5 style="text-decoration:underline;"><strong>BİZE ULAŞIN</strong></h5>
+            <hr>
+            <p><img src="{{ url_for('static', filename = 'image/location.png') }}" />Adres: Dumlupınar Mahallesi, Gözdağı Cd. Pendik/İstanbul</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 24</p>
+            <p><img src="{{ url_for('static', filename = 'image/phone.png') }}" />0216 368 75 25</p>
+      </div>
+  </div>
+
+
+</footer>
+
+<!-- Jumbotron -->
+<div class="jumbotron" style="margin-bottom: 0px; height: 10px;">
+<h5 style="color: #00AFC9;"><center>Tüm Hakları Saklıdır &copy2020 </center></h5>
+</div>
+<!-- Jumbotron Son -->
+</body>    
+{% endblock %}
